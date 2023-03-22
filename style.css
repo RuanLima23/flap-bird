@@ -1,0 +1,65 @@
+/* Animação */
+@keyframes animacao {
+    0% {background-color: red}
+    16.6% {background-color: yellow;}
+    32.2% {background-color: green;}
+    49.8% {background-color: aqua;}
+    66.4% {background-color: blue}
+    83% {background-color: rgb(255, 0, 179);}
+    100% {background-color: red;}
+}
+
+h1 {
+    font-size: 50px;
+    margin: 0%;
+}
+p {
+    padding: 1%;
+}
+
+body {
+    margin: 0%;
+}
+
+#container {
+    height: auto;
+    background-color: red;
+    position: static;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: animacao;
+    animation-duration: 10s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+}
+
+#menu {
+    height: 87.2vh;
+    width: 60vh;
+    font-family: 'Press Start 2P', cursive;
+    margin: 1%;
+    background-image: url('background_menu.png');
+    position: static;
+    border-radius: 20px;
+    padding: 2%;
+    text-align: center;
+    box-shadow: 0 0 5vh black;
+}
+
+#button {
+    height: 50px;
+    width: 150px;
+    background-color: rgb(54, 153, 54);
+    border-radius: 10px;
+    box-shadow: 0 0 5vh black;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+button:hover {
+    transform: translateY(-4px);
+
+}
