@@ -1,0 +1,118 @@
+/* Animação */
+@keyframes animacao {
+    0% {background-color: red}
+    16.6% {background-color: yellow;}
+    32.2% {background-color: green;}
+    49.8% {background-color: aqua;}
+    66.4% {background-color: blue}
+    83% {background-color: rgb(255, 0, 179);}
+    100% {background-color: red;}
+}
+
+body {
+    margin: 0%;
+}
+
+p {
+    height: 0px;
+    width: 30px;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+    font-family: 'Press Start 2P', cursive;;
+    font-size: 25px;
+    margin: 0%;
+    
+}
+
+#game-canvas {
+    height: 450px;
+    width: 350px;
+    margin: 1%;
+}
+
+#container {
+    height: auto;
+    background-color: red;
+    position: static;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: animacao;
+    animation-duration: 10s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+}
+
+#menu {
+    height: 87.2vh;
+    width: 60vh;
+    margin: 1%;
+    background-color: rgb(0, 132, 255);
+    position: static;
+    border-radius: 20px;
+    padding: 2%;
+    box-shadow: 0 0 5vh black;
+    text-align: right;
+}
+button {
+    height: 50px;
+    width: 50px;
+    padding: 0%;
+    position: relative;
+    transition: trasnform 200ms linear;
+}
+button:hover {
+    transform: scale(1.08);
+}
+
+#button-pause {
+    background-color: white;
+    cursor: pointer;
+    border-radius: 50%;
+    border-width: 0px;
+    box-shadow: 3px 3px 5px black;
+    position: relative;
+    float: right;
+    z-index: 2;
+}
+
+#button-play {
+    background-color: white;
+    cursor: pointer;
+    border-radius: 50%;
+    border-width: 0px;
+    box-shadow: 3px 3px 5px black;
+    position: relative;
+    left: 50px;
+    z-index: 1;
+} 
+
+#triangle {
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-left: 40px solid black;
+    border-bottom: 20px solid transparent;
+    margin-left: 20%;
+}
+
+#bar {
+    height: 30px;
+    width: 10px;
+    background-color: rgb(161, 161, 161);
+    position: static;
+    display: inline-block;
+    margin: 2px;
+    box-shadow: 2px 2px 3px black;
+}
+
+#canvas-container {
+    height: 470px;
+    width: 350px;
+    position: relative;
+    top: 20px;
+    left: 13px;
+    background-image: url('background_menu.png');
+    border-radius: 20px;
+    box-shadow: 0 0 5vh black;
+}
